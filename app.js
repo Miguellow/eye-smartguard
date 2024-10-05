@@ -61,7 +61,7 @@ function playRepeatedSound(soundId) {
     // Set an interval to play the sound every 2 seconds (or whatever duration you prefer)
     alertSoundInterval = setInterval(() => {
         playSound(soundId);
-    }, 7250); // Adjust the timing as needed
+    }, 7100); // Adjust the timing as needed
 }
 
 function resetTimer() {
