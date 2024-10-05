@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fbff00;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
+
+#screenTimeDisplay {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+progress {
+  width: 21%;
+  height: 31px;
+}
+
+#postureStatus {
+  font-size: 2em;
+  color: #007BFF;
+  margin-top: 10px;
+}
+
+#gyroscopeGraph {
+  border: 2px solid #000;
+  margin: 20px auto;
+  display: block;
+}

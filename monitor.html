@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EYE SMARTGUARD - Monitor</title>
+</head>
+<body>
+    <h1>EYE SMARTGUARD</h1>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+
+    <h2>Monitor</h2>
+    <div class="timer-section">
+        <h3>Screen Time</h3>
+        <div class="timer">
+            <p id="screenTimeDisplay">0:00</p>
+            <progress id="screenTimeProgress" value="0" max="100"></progress>
+        </div>
+        <label for="screenTimeLimit">Set Screen Time Limit (minutes): </label>
+        <input type="number" id="screenTimeLimit" min="1">
+        <button onclick="resetTimer()">Reset Timer</button>
+    </div>
+
+    <div class="app-usage-section">
+        <h3>App Usage Statistics</h3>
+        <ul id="appStats">
+            <li>Social Media: 0 minutes</li>
+            <li>Video Streaming: 0 minutes</li>
+            <li>Gaming: 0 minutes</li>
+            <li>Others: 0 minutes</li>
+        </ul>
+    </div>
+
+    <h2>Posture Detection</h2>
+    <div class="gyroscope-section">
+        <h3>Gyroscope - Head Movement</h3>
+        <canvas id="gyroscopeGraph" width="400" height="200" style="border:10px solid #000;"></canvas>
+        <p id="postureStatus">Posture: Good</p>
+    </div>
+
+    <h2>Daily Statistics</h2>
+    <p id="dailyStats">Screen Time: 0 min, Posture: Good</p>
+
+    <!-- Audio Elements -->
+    <audio id="screenTimeAlert" src="sounds/screenTimeAlert.mp3" preload="auto"></audio>
+    <audio id="postureAlert" src="sounds/postureAlert.mp3" preload="auto"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
